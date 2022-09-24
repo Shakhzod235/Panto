@@ -1,0 +1,116 @@
+:root {
+    --orange-color: #E58411;
+    --gray-color: #1E1E1E;
+    --font-size-small: 18px;
+    --font-size-medium: 28px;
+    --font-size-large: 42px;
+}
+.material-symbols-outlined {
+    color: #fff;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+body {
+    margin: 0;
+}
+.wrapper {
+    background-image: url(/img/brown.png);
+}
+.header {
+    padding: 20px 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo__link {
+    position: relative;
+    font-size: var(--font-size-medium);
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.more-icon {
+    position: absolute;
+}
+.nav {
+    width: 100%;
+    max-width: 450px;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.nav-list__item {
+    list-style: none;
+}
+.nav-list__link {
+    font-size: var(--font-size-small);
+    font-family: 'Gilroy-Medium', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    transition: .1s all;
+}
+.nav-list__link:hover {
+    color: var(--orange-color);
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid var(--gray-color);
+}
+.dropdown-list__link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Gilroy-Regular', sans-serif;
+    padding: 10px 25px;
+    margin: 0 auto;
+    transition: .1s all;
+}
+.dropdown-list__link:hover {
+    background-color: var(--orange-color);
+    color: #fff;
+}
+.show {
+    display: block;
+}
+.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.basket__link {
+    text-decoration: none;
+}
+.basket__icon {
+    font-size: 30px;
+}
+.basket__counter {
+    position: absolute;
+    right: -7px;
+    top: 10px;
+    padding: 2px 7px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    color: #fff;
+}
