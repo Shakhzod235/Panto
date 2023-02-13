@@ -12,9 +12,9 @@ const dropMenu = (menu) => {
 }
 dropdown.addEventListener('click', () => dropMenu(dropdownList));
 colorPicker.addEventListener('click', () => dropMenu(dropupList));
-dropupListItemBrown.addEventListener('click', () => wrapper.style.backgroundImage = "url('../img/brown-bg.png')")
-dropupListItemRed.addEventListener('click', () => wrapper.style.backgroundImage = "url('../img/red-bg.png')")
-dropupListItemGray.addEventListener('click', () => wrapper.style.backgroundImage = "url('../img/gray-bg.png')")
+dropupListItemBrown.addEventListener('click', () => wrapper.style.backgroundImage = "url(../img/brown-bg.png)")
+dropupListItemRed.addEventListener('click', () => wrapper.style.backgroundImage = "url(../img/red-bg.png)")
+dropupListItemGray.addEventListener('click', () => wrapper.style.backgroundImage = "url(../img/gray-bg.png)")
 for(let i = 0; i < dropupListItem.length; i++) {
     dropupListItem[i].addEventListener('click', function() {
         let current = document.getElementsByClassName("dropup-list__item_active");

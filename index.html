@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/gilroy-bold">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="//fonts.cdnfonts.com/css/gilroy-bold">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Panto</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="wrapper__header header">
             <div class="container flex">
-                <div class="logo">
+                <div class="header__logo logo">
                     <a href="#" class="logo__link">Panto</a>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
+                <nav class="header__nav nav">
+                    <ul class="nav__nav-list nav-list">
                         <li class="nav-list__item">
-                            <div class="dropdown">
-                                <a href="#" class="nav-list__link">Furniture <span class="material-symbols-outlined more-icon">expand_more</span></a>
-                                <div class="dropdown-list">
+                            <div class="nav-list__dropdown dropdown">
+                                <a href="#" class="nav-list__link">
+                                    Furniture
+                                    <span class="material-symbols-outlined nav-list__icon">expand_more</span>
+                                </a>
+                                <div class="dropdown__list dropdown-list">
                                     <a href="#" class="dropdown-list__link">Beds</a>
                                     <a href="#" class="dropdown-list__link">Chair</a>
                                     <a href="#" class="dropdown-list__link">All</a>
@@ -33,7 +36,7 @@
                         <li class="nav-list__item"><a href="#" class="nav-list__link">Contact</a></li> 
                     </ul>
                 </nav>
-                <div class="basket">
+                <div class="header__basket basket">
                     <a href="#" class="basket__link">
                         <span class="material-symbols-outlined basket__icon">local_mall</span>
                         <span class="basket__counter">0</span>
@@ -41,26 +44,63 @@
                 </div>
             </div>
         </header>
-        <section class="hero">
-            <h1 class="hero__heading">Make your interior more<br>minimalistic & modern</h1>
-            <p class="hero__title">Turn your room with panto into a lot more minimalist<br>and modern with ease and speed</p>
-            <form class="search-form hero__search-form">
-                <input type="search" name="search" class="search-form__input" placeholder="Search furniture">
-                <button type="submit" class="search-form__button"><span class="material-symbols-outlined search-form__icon">search</span></button>
-            </form>
-            <div class="hero__dropup dropup">
-                <div class="dropup__colorpicker colorpicker">
-                    <div class="colorpicker__inner"></div>
-                </div>
-                <div class="hero__dropup-list dropup-list">
-                    <div class="dropup-list__item dropup-list__item_color_brown dropup-list__item_active"></div>
-                    <div class="dropup-list__item dropup-list__item_color_red"></div>
-                    <div class="dropup-list__item dropup-list__item_color_gray"></div>
+        <section class="wrapper__hero">
+            <div class="container">
+                <h1 class="hero__heading">Make your interior more<br>minimalistic & modern</h1>
+                <p class="hero__subtitle">Turn your room with panto into a lot more minimalist<br>and modern with ease and speed</p>
+                <form class="hero__search-form search-form">
+                    <input type="search" name="search" class="search-form__input" placeholder="Search furniture">
+                    <button type="submit" class="search-form__button">
+                        <span class="material-symbols-outlined search-form__icon">search</span>
+                    </button>
+                </form>
+                <div class="hero__dropup dropup">
+                    <div class="dropup__colorpicker colorpicker">
+                        <div class="colorpicker__inner"></div>
+                    </div>
+                    <div class="hero__dropup-list dropup-list">
+                        <div class="dropup-list__item dropup-list__item_color_brown dropup-list__item_active"></div>
+                        <div class="dropup-list__item dropup-list__item_color_red"></div>
+                        <div class="dropup-list__item dropup-list__item_color_gray"></div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
-    <main class="main"></main>
+    <main class="main">
+        <section class="advantages">
+            <div class="container flex">
+                <h2 class="advantages__heading">Why<br>choosing us</h2>
+                <div class="flex advantages__list">
+                    <div class="advantages__features features">
+                        <h2 class="features__heading">Luxury facilities</h2>
+                        <p class="features__subtitle">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+                        <a href="#" class="features__link">
+                            More info
+                            <span class="material-symbols-outlined features__icon">trending_flat</span>
+                        </a>
+                    </div>
+                    <div class="advantages__features features">
+                        <h2 class="features__heading">Affordable Price</h2>
+                        <p class="features__subtitle">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
+                        <a href="#" class="features__link">
+                            More info
+                            <span class="material-symbols-outlined features__icon">trending_flat</span>
+                        </a>
+                    </div>
+                    <div class="advantages__features features">
+                        <h2 class="features__heading">Many Choices</h2>
+                        <p class="features__subtitle">We provide many unique work space choices so that you can choose the workspace to your liking.</p>
+                        <a href="#" class="features__link">
+                            More info
+                            <span class="material-symbols-outlined features__icon">trending_flat</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
